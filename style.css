@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif, Arial, Helvetica;
+}
+
+body {
+  width: 100vw;
+  height: auto;
+  
+  background-color: #d1d1d0;
+  display: grid;
+  place-items: center;
+
+  /* min-height: 100vh; */
+}
+
+form {
+  background-color: transparent;
+  border: 1px solid #777;
+  padding: 80px;
+  width: 50%;
+  margin: 100px auto;
+  text-align: center;
+  box-shadow: 0 0 20px #777;
+}
+
+#temp_Convertor label {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+#temp {
+  border: none;
+  padding: 10px;
+  height: 40px;
+  width: 100px;
+  font-size: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #fdfdfa;
+}
+
+#temp_diff {
+  height: 40px;
+  border: none;
+  margin-top: 20px;
+  padding: 1px;
+  font-size: 15px;
+  vertical-align: top;
+  font-weight: 600;
+}
+
+[type="submit"] {
+  height: 35px;
+  margin: 20px;
+  width: 100px;
+  font-size: 18px;
+  border: none;
+  background-color: rgb(109, 108, 108);
+  color: rgb(241, 234, 234);
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+#resultContainer {
+  font-size: 25px;
+  font-weight: 600;
+  color: #1d1c1c;
+}
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+  form {
+    width: 80%;
+    padding: 60px;
+  }
+}
+
+/* For screens smaller than 576px */
+@media (max-width: 575px) {
+  form {
+    width: 90%;
+    height: auto;
+    padding: 40px;
+  }
+  #temp_Convertor label {
+    font-size: 24px;
+  }
+  #temp {
+    /* height: 30px; */
+    height: auto;
+    width: 80px;
+    font-size: 16px;
+  }
+  #temp_diff {
+    height: 30px;
+    font-size: 12px;
+  }
+  [type="submit"] {
+    height: 30px;
+    width: 80px;
+    font-size: 16px;
+  }
+  #resultContainer {
+    font-size: 20px;
+  }
+  footer{
+    font-size: 0.65rem;
+  }
+}
